@@ -1,0 +1,115 @@
+*{
+    border: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner{
+    background-color:blanchedalmond;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid grey;
+}
+
+.banner-text{
+    font-size: 30px;
+    margin: 1%;
+    color:black;
+    font-weight: bold;
+}
+
+.party-text{
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    background-color:coral;
+    padding: 5px;
+}
+
+.hero{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap:2%;
+}
+
+.config{
+    display:flex;
+    flex-direction: row;
+    gap : 1%;
+    justify-content: center;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.config-text{
+    text-align: center;
+    align-content: center;
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+.config-button{
+    border: solid black;
+    border-radius: 5px;
+}
+
+.clear{
+    background-color:crimson;
+}
+
+.textarea{
+    border: solid black;
+    width: 7%;
+    align-content: center;
+    resize: none;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5rem;
+    /* height:30rem; */
+    /* border: solid rgb(196, 112, 112); */
+}
+
+.grid-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell{
+    width:10px;
+    height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    /* width:100%; */
+    /* padding-top: 100%; */
+    margin: 0px;
+    text-align: center;
+    border: solid rgb(219, 211, 211);
+}
+
+.credits{
+    background-color:burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.credits-text{
+    font-size: 15px;
+    padding: 3%;
+    text-align: center;
+}

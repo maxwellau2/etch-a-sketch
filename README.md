@@ -1,0 +1,1 @@
+A simple etch a sketch game to practice DOM manipulation in vanilla JS. As part of the odin project's curriculum.
