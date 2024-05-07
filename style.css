@@ -100,6 +100,7 @@
     text-align: center;
     border: solid rgb(219, 211, 211);
     border-width: 1px;
+    background-color: white;
 }
 
 .credits{

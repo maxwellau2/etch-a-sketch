@@ -14,6 +14,25 @@ const btn_set_grid = document.getElementById("btn-set-grid");
 // button to clear grid
 const btn_clear_grid = document.getElementById("btn-clear-grid");
 
+// button to toggle grid lines
+const btn_toggle_grid = document.getElementById("btn-toggle-grid");
+
+gridlines = true;
+
+btn_toggle_grid.addEventListener("click", ()=>{
+    gridlines = !gridlines;
+    const cells = document.querySelectorAll(".cell",);
+    if(gridlines === true){
+        // console.log(cells)
+        // console.log(cells.length)
+        cells.forEach(cell => {
+        cell.style.borderWidth = '0px'});
+    }
+    else{
+        cells.forEach(cell => {
+        cell.style.borderWidth = '1px'});
+    }
+})
 // function sketch_button()
 isMouseDown = false;
 document.addEventListener("mousedown", () => {
@@ -37,7 +56,7 @@ function create_row(grid_size,row_num){
     new_row.className = "grid-row";
     for (let i=0; i<grid_size; i++){
         // create new button with style
-        let new_button = document.createElement("button");
+        let new_button = document.createElement("div");
         new_button.className = "cell"
         new_button.id = `${row_num}-${i}`; // row-col id
         new_button.style.height = Math.floor(window.innerHeight/grid_size*1.5);
